@@ -1,0 +1,238 @@
+/* Stylesheet by Geri, Will, and Matt 2019 */
+
+text {
+  text-transform: none;
+  color: white;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: underline;
+	color: white;
+}
+
+ul, li {
+	list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 15px;
+    margin-bottom: 6px;
+}
+
+ul {
+	padding-bottom: 10px;
+}
+
+h2 {
+	text-transform: none;
+	font-size: 4em;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	letter-spacing: 0em;
+}
+
+h3 {
+  color: white
+	font-weight: 300;
+	font-size: 1.6em;
+}
+
+.info {
+	padding: 6px 8px;
+	background: white;
+	font-size: 14px;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	width: 250px;
+	clear: both;
+}
+
+.info h2 {
+	color: #000;
+	font-weight: 800;
+	font-size: 20px;
+	float: right;
+	line-height: 16px;
+}
+
+.info h3 {
+	line-height: 40px;
+}
+
+.info h4 {
+	margin: 0 0 5px;
+	float: left;
+	line-height: 16px;
+}
+
+.legend {
+	line-height: 18px;
+	color: #555;
+	width: 187px;
+	font-size: 12px;
+	bottom: 10px;
+}
+
+.legend i {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-right: 8px;
+	opacity: 0.7;
+}
+
+body {
+	background: #696969;
+	font-family: 'Lato', sans-serif;
+	text-align: left;
+	height: 100vh;
+	position: relative;
+	display: grid;
+	grid-template-columns: [map] 60% [features] 40%;
+	grid-template-rows: [title] 100vh [body] 100vh;
+	grid-template-areas:
+		"header header"
+		"map features"
+}
+
+body h2 {
+	font-size: 30px;
+	text-transform: bold;
+	text-align: center;
+}
+
+#map {
+	position: fixed;
+	width: 60%;
+	background: #fff;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	grid-area: map;
+	font-family: 'Lato', sans-serif;
+}
+
+#map h4 {
+	padding-bottom: 0px;
+}
+
+.features {
+	grid-area: features;
+}
+
+section {
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 15px;
+	font-size: 13px;
+	max-width: 600px;
+	opacity: 0.8;
+	color: white;
+}
+
+section h2{
+	text-align: left;
+	margin-bottom: 20px;
+	display: inline-block;
+	margin-top: 70px;
+}
+
+#intro {
+	margin-top: 60px;
+}
+
+#sources {
+	margin-bottom: 60px;
+}
+
+.bodytext {
+	text-align: left;
+	line-height: 20px;
+	padding-bottom: 2px;
+	font-size: 16px;
+}
+
+.highlight {
+	background-color: #3a3a3a;
+	padding: 1px 3px 1px 3px;
+}
+
+#title {
+	font-family: 'Lato', sans-serif;
+	background: url("../img/xray.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	padding-top: 25vh;
+	z-index: 95;
+	grid-area: header;
+	color: white;
+}
+
+#title img {
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 99;
+}
+
+#title h2 {
+	text-shadow: 3px 3px 2px #000;
+	font-size: 8em;
+	font-weight: 800;
+	margin-bottom: 0px;
+	letter-spacing: 4px;
+}
+
+#title h3 {
+	text-shadow: 1px 1px 1px #000;
+	padding-top: 10px;
+}
+
+#title h4 {
+	text-shadow: 2px 2px 2px #000;
+	font-size: 3em;
+	font-weight: 800;
+	text-align: center;
+}
+
+.btn-help {
+	background-image: url("../img/help.png")
+	width: 6px;
+	margin-left: 3px;
+	margin-right: 1px;
+}
+
+.btn-help:hover {
+	color: #969696;
+}
+
+.btn-help:active {
+	color: #fff;
+	background: #969696;
+}
+
+.tooltip-inner {
+	display: block;
+	padding: 5px;
+	font-size: 12px;
+	background-color: #969696;
+	color: #fff;
+	max-width: 250px;
+}
+
+#help {
+	text-decoration: none;
+}
+
+#help:hover {
+	color: #969696;
+}
